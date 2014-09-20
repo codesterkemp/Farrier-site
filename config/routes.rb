@@ -1,4 +1,16 @@
 FarrierSite::Application.routes.draw do
+  root :to => 'clients#home'
+
+  get "clients/home"
+
+  get "clients/new"
+
+  get "clients/edit"
+
+  get "clients/delete"
+
+  get "clients/search"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +60,7 @@ FarrierSite::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  
 
   # See how all your routes lay out with "rake routes"
 
