@@ -5,11 +5,11 @@ FarrierSite::Application.routes.draw do
 
   get "clients/new"
 
-  get "clients/edit"
+  match 'editor' => "clients#edit"
 
   get "clients/delete"
 
-  get "clients/search"
+  match 'finder' => "clients#search"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
