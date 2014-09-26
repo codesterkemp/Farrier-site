@@ -20,10 +20,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'bcrypt-ruby'
 gem 'jquery-rails'
 
 group :development do
   gem 'rails_layout'
+  gem 'annotate', '2.5.0'
 end
 
 # To use ActiveModel has_secure_password
