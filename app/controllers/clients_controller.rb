@@ -2,6 +2,10 @@ class ClientsController < ApplicationController
   def home
   end
 
+  def signup
+    @client = Farrier.new
+  end
+
   def new
   end
 

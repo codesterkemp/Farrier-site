@@ -5,6 +5,8 @@ FarrierSite::Application.routes.draw do
 
   get "clients/new"
 
+  match 'signup' => "clients#signup"
+
   match 'editor' => "clients#edit"
 
   get "clients/delete"
