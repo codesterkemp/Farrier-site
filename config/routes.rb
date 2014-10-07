@@ -1,4 +1,5 @@
 FarrierSite::Application.routes.draw do
+  resources :farriers
   root :to => 'clients#home'
 
   get "clients/home"

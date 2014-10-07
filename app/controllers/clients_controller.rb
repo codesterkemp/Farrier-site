@@ -3,7 +3,7 @@ class ClientsController < ApplicationController
   end
 
   def signup
-    @client = Farrier.new
+    @farrier = Farrier.new
   end
 
   def new
